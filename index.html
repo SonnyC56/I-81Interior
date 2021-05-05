@@ -10,17 +10,17 @@
 	<script src="https://unpkg.com/aframe-thumb-controls-component@1.1.0/dist/aframe-thumb-controls-component.min.js"></script>
 	<script src="https://rawgit.com/fernandojsg/aframe-teleport-controls/master/dist/aframe-teleport-controls.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
-<script src="https://recast-api.donmccurdy.com/aframe-inspector-plugin-recast.js"></script>
+
 
 	
 </head>
 <body>
-   <a-scene inspector-plugin-recast>
+   <a-scene>
      <a-assets>
     <a-asset-item id="interior" src="entity.glb"></a-asset-item>
   </a-assets> 
  
-  <a-entity gltf-model="#interior" nav-mesh></a-entity>
+  <a-entity gltf-model="#interior" nav-mesh=""></a-entity>
 
 <a-entity light="color: #c2c2c2; type: ambient; intensity: 10" data-aframe-default-light="" aframe-injected=""></a-entity>
 
