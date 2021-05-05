@@ -14,7 +14,12 @@
 </head>
 <body>
    <a-scene>
-
+     <a-assets>
+    <a-asset-item id="interior" src="AMEChurchInterior.glb"></a-asset-item>
+  </a-assets> 
+   </a-entity>
+  <a-entity gltf-model="#interior"></a-entity>
+    </a-scene>
 <!-- Basic movement and teleportation  -->
       <a-entity id="cameraRig" movement-controls="constrainToNavMesh: true;" navigator="cameraRig: #cameraRig; cameraHead: #head; collisionEntities: .collision; ignoreEntities: .clickable" position="0 0 0" rotation="0 0 0">
         <!-- camera -->
