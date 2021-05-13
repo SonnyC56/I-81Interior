@@ -18,10 +18,10 @@
 <body>
    <a-scene inspector-plugin-recast>
      <a-assets>
-    <a-asset-item id="interior" src="AMEInteriorWithNavMesh.gltf"></a-asset-item>
+    <a-asset-item id="interior" src="AMEInteriorBlender.gltf"></a-asset-item>
   </a-assets> 
  
-<a-entity gltf-model="#interior" position="0 -3 0"></a-entity>
+<a-entity gltf-model="#interior" position="0 -5 0"></a-entity>
 
 <a-entity light="color: #c2c2c2; type: ambient; intensity: 10" data-aframe-default-light="" aframe-injected=""></a-entity>
 
@@ -31,7 +31,7 @@
       <a-entity id="cameraRig" movement-controls="constrainToNavMesh: false;" navigator="cameraRig: #cameraRig; cameraHead: #head; collisionEntities: .collision; ignoreEntities: .clickable" position="0 2 0" rotation="0 0 0">  
 
         <!-- camera -->
-        <a-entity id="head" camera="active: true" position="0 1.6 0" look-controls="pointerLockEnabled: true; reverseMouseDrag: true" ></a-entity>
+        <a-entity id="head" camera="active: true" position="0 1.6 0" look-controls="pointerLockEnabled: true; reverseMouseDrag: false" ></a-entity>
 
               <!-- Left Controller -->
               <a-entity id="leftHand" hand-controls="hand: left; handModelStyle: lowPoly; color: #15ACCF" teleport-controls="cameraRig: #cameraRig; teleportOrigin: #head; button: trigger; curveShootingSpeed: 18; landingMaxAngle: 60" visible="true"></a-entity>
